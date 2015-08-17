@@ -1187,7 +1187,6 @@ var assign = Object.assign || require('object.assign');
 var RouteRenderingMixin = {
 
   renderRouteHandler: function(props) {
-    debugger;
     if (!this.state.match.route) {
       throw new Error("React-router-component: No route matched! Did you define a NotFound route?");
     }
@@ -23028,6 +23027,7 @@ var App = React.createClass({displayName: "App",
 		return (
 			React.createElement(Template, null, 
 				React.createElement(Locations, null, 
+					React.createElement(Location, {path: "", handler: Catalog}), 
 					React.createElement(Location, {path: "/", handler: Catalog}), 
 					React.createElement(Location, {path: "/cart", handler: Cart}), 
 					React.createElement(Location, {path: "/item/:item", handler: CatalogDetail})
