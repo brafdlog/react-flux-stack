@@ -1187,6 +1187,7 @@ var assign = Object.assign || require('object.assign');
 var RouteRenderingMixin = {
 
   renderRouteHandler: function(props) {
+    debugger;
     if (!this.state.match.route) {
       throw new Error("React-router-component: No route matched! Did you define a NotFound route?");
     }
