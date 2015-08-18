@@ -23026,7 +23026,7 @@ var App = React.createClass({displayName: "App",
 	render: function() {
 		return (
 			React.createElement(Template, null, 
-				React.createElement(Locations, null, 
+				React.createElement(Locations, {contextual: true}, 
 					React.createElement(Location, {path: "", handler: Catalog}), 
 					React.createElement(Location, {path: "/", handler: Catalog}), 
 					React.createElement(Location, {path: "/cart", handler: Cart}), 
