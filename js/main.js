@@ -23026,10 +23026,10 @@ var App = React.createClass({displayName: "App",
 	render: function() {
 		return (
 			React.createElement(Template, null, 
-				React.createElement(Locations, {contextual: true}, 
-					React.createElement(Location, {path: "/", handler: Catalog}), 
-					React.createElement(Location, {path: "/cart", handler: Cart}), 
-					React.createElement(Location, {path: "/item/:item", handler: CatalogDetail})
+				React.createElement(Locations, null, 
+					React.createElement(Location, {path: "/react-flux-stack/", handler: Catalog}), 
+					React.createElement(Location, {path: "/react-flux-stack/cart", handler: Cart}), 
+					React.createElement(Location, {path: "/react-flux-stack/item/:item", handler: CatalogDetail})
 				)
 			)
 		);
